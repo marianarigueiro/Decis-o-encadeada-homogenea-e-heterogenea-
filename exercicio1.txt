@@ -1,0 +1,20 @@
+public class Exercicio1 {
+
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Digite a hora de início de trabalho: (0 ás 23)" );
+        int horaInicio = scanner.nextInt();
+        
+         if (horaInicio >= 5 && horaInicio < 13) {
+            System.out.println("Turno: Manhã");
+        } else if (horaInicio >= 13 && horaInicio < 21) {
+            System.out.println("Turno: Tarde");
+        } else {
+            // No caso de horas entre 21:00 e 5:00
+            System.out.println("Turno: Noite");
+        }
+
+        
+    }
